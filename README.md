@@ -2,7 +2,7 @@
 A project for the Hive. 🐝  
   
 This project was really interesting and fun to do, and it will be very useful in the future as well.  
-I learned a lot about coding itself, and also about Makefiles and C-language. This library will help me in my future work and I will update it whenever I come up with another useful function.  
+I learned a lot about Makefiles and C-language, and also about coding itself. This library will help me in my future work and I will update it whenever I come up with another useful function.  
 
 ## List of functions:  
   
