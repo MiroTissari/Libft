@@ -8,12 +8,12 @@ I learned a lot about Makefiles and C-language, and also about coding itself. Th
   
 | Recreations of library functions | Additional functions | Bonus functions | Added afterwards |
 | :------------------------------- | :------------------- | :-------------- | :---------------- |
-| ft_atoi                          | ft_itoa              | ft_2d_free      |
-| ft_bzero                         | ft_memalloc          | ft_lstadd       |
-| ft_isalnum                       | ft_memdel            | ft_lstadd_back  |
-| ft_isalpha                       | ft_putchar           | ft_lstcount     |
-| ft_isascii                       | ft_putchar_fd        | ft_lstdel       |
-| ft_isdigit                       | ft_putendl           | ft_lstdelone    |
+| ft_atoi                          | ft_itoa              | ft_2d_free      | get_next_line
+| ft_bzero                         | ft_memalloc          | ft_lstadd       | ft_strjoin_free
+| ft_isalnum                       | ft_memdel            | ft_lstadd_back  | ft_is_neg
+| ft_isalpha                       | ft_putchar           | ft_lstcount     | double_power
+| ft_isascii                       | ft_putchar_fd        | ft_lstdel       | ft_strchr_place
+| ft_isdigit                       | ft_putendl           | ft_lstdelone    | ft_strrchr_place
 | ft_isprint                       | ft_putendl_fd        | ft_lstfree      |
 | ft_memccpy                       | ft_putnbr            | ft_lstiter      |
 | ft_memchr                        | ft_putnbr_fd         | ft_lstmap       |
