@@ -81,13 +81,14 @@ char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(char const *s);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
-int			get_next_line(const int fd, char **line);
 
 void		*ft_2d_free(char **newstr);
 void		*ft_lstfree(t_list **alst);
 t_list		*ft_str_to_lst(char const *s, char c);
 int			ft_lstcount(t_list **list);
 void		ft_lstadd_back(t_list **alst, t_list *new);
+
+int			get_next_line(const int fd, char **line);
 char		*ft_strjoin_free(char *s1, char *s2, int n, int tofree);
 int			ft_is_neg(double num);
 long double	double_power(long double num, int prec);
