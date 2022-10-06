@@ -37,4 +37,3 @@ I learned a lot about Makefiles and C-language, and also about coding itself. Th
 | ft_tolower                       |                      |                 |
 | ft_toupper                       |                      |                 |
 
-

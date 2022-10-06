@@ -6,7 +6,7 @@
 /*   By: mtissari <mtissari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 18:14:02 by mtissari          #+#    #+#             */
-/*   Updated: 2021/11/30 14:46:58 by mtissari         ###   ########.fr       */
+/*   Updated: 2022/01/03 16:52:22 by mtissari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,6 @@
 
 void	ft_putstr(char const *s)
 {
-	int	x;
-
-	x = 0;
-	if (!s)
-		return ;
-	while (s[x] != '\0')
-	{
-		ft_putchar (s[x]);
-		x++;
-	}
+	if (s)
+		write (1, s, ft_strlen(s));
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mtissari <mtissari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ajones <ajones@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 20:04:54 by mtissari          #+#    #+#             */
-/*   Updated: 2021/12/01 14:41:44 by mtissari         ###   ########.fr       */
+/*   Updated: 2022/03/08 19:01:58 by ajones           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,4 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	}
 	ptr[y] = '\0';
 	return (ptr);
-	return (0);
 }

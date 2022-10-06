@@ -6,7 +6,7 @@
 /*   By: mtissari <mtissari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:26:05 by mtissari          #+#    #+#             */
-/*   Updated: 2021/12/08 17:41:50 by mtissari         ###   ########.fr       */
+/*   Updated: 2022/06/02 19:26:38 by mtissari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 void	ft_strdel(char **as)
 {
-	if (!as)
-		return ;
-	free(*as);
-	*as = NULL;
+	ft_memdel((void **)as);
 }

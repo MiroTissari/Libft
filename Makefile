@@ -6,12 +6,11 @@
 #    By: mtissari <mtissari@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 15:18:33 by mtissari          #+#    #+#              #
-#    Updated: 2021/12/29 16:32:39 by mtissari         ###   ########.fr        #
+#    Updated: 2022/06/16 21:11:12 by mtissari         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 .PHONY := all re clean fclean make
-ROOT := ./
 FUNCTIONS := ft_2d_free.c ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c \
 ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd_back.c ft_lstadd.c \
 ft_lstcount.c ft_lstdel.c ft_lstdelone.c ft_lstfree.c ft_lstiter.c ft_lstmap.c \
@@ -22,36 +21,28 @@ ft_putstr.c ft_str_to_lst.c ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c \
 ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_striter.c ft_striteri.c \
 ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c \
 ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c \
-ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
-SOURCES := $(addprefix $(ROOT), $(FUNCTIONS))
-INCLUDES := ./libft.h
-#OBJECTS := ft_2d_free.o ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o \
-ft_isascii.o ft_isdigit.o ft_isprint.o ft_itoa.o ft_lstadd_back.o \
-ft_lstadd.o ft_lstcount.o ft_lstdel.o ft_lstdelone.o ft_lstfree.o \
-ft_lstiter.o ft_lstmap.o ft_lstnew.o ft_memalloc.o ft_memccpy.o \
-ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memdel.o ft_memmove.o ft_memset.o \
-ft_putchar_fd.o ft_putchar.o ft_putendl_fd.o ft_putendl.o ft_putnbr_fd.o \
-ft_putnbr.o ft_putstr_fd.o ft_putstr.o ft_str_to_lst.o ft_strcat.o ft_strchr.o \
-ft_strclr.o ft_strcmp.o ft_strcpy.o ft_strdel.o ft_strdup.o ft_strequ.o \
-ft_striter.o ft_striteri.o ft_strjoin.o ft_strlcat.o ft_strlen.o ft_strmap.o \
-ft_strmapi.o ft_strncat.o ft_strncmp.o ft_strncpy.o ft_strnequ.o ft_strnew.o \
-ft_strnstr.o ft_strrchr.o ft_strsplit.o ft_strstr.o ft_strsub.o ft_strtrim.o \
-ft_tolower.o ft_toupper.o#
-O_FILES = $(SOURCES:.c=.o)
+ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
+get_next_line.c ft_strjoin_free.c ft_is_neg.c ft_double_power.c \
+ft_strchr_place.c ft_strrchr_place.c
+#SOURCES := $(addprefix $(ROOT), $(FUNCTIONS))
+INCLUDES := .
+O_FILES = $(FUNCTIONS:.c=.o)
 FLAGS := -Wall -Wextra -Werror -c
 NAME := libft.a
 
 $(NAME): $(SOURCES)
-	@@gcc $(FLAGS) -I $(INCLUDES) $(SOURCES)
-	@@ar rc $(NAME) $(O_FILES)
-	ranlib $(NAME)
+	@gcc $(FLAGS) -I $(INCLUDES) $(FUNCTIONS)
+	@ar rc $(NAME) $(O_FILES)
+	@ranlib $(NAME)
 
 all: $(NAME)
 
 clean:
-	/bin/rm -f $(O_FILES)
+	@rm -f $(O_FILES)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
+
+make andclean: all clean

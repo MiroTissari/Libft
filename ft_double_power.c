@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_double_power.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtissari <mtissari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/10 13:13:02 by mtissari          #+#    #+#             */
-/*   Updated: 2022/06/16 19:49:55 by mtissari         ###   ########.fr       */
+/*   Created: 2022/09/29 16:41:30 by mtissari          #+#    #+#             */
+/*   Updated: 2022/09/29 16:41:32 by mtissari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strnew(size_t size)
+long double	double_power(long double num, int prec)
 {
-	char	*str;
+	long double	i;
+	int			j;
 
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (str == NULL)
-		return (NULL);
-	ft_memset(str, '\0', size + 1);
-	return (str);
+	j = 0;
+	i = 1.0;
+	while (j < prec)
+	{
+		i *= num;
+		j++;
+	}
+	return (i);
 }
