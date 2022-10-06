@@ -2,7 +2,11 @@
 A project for the Hive. 🐝  
   
 This project was really interesting and fun to do, and it will be very useful in the future as well.  
-I learned a lot about Makefiles and C-language, and also about coding itself. This library will help me in my future work and I will update it whenever I come up with another useful function.  
+I learned a lot about Makefiles and C-language, and also about coding itself. 
+
+In this project we had to recode some quite popular functions used in C -language by their manual pages being our guidelines. For the additional functions and bonus functions we had similiar instructions, and for all the work we had to follow the norminette, which has it's rules like 'for'-loops are forbidden or function cannot be more than 25 lines long.
+
+This library will help me in my future work and I will update it whenever I come up with another useful function.  
 
 ## List of functions:  
   
